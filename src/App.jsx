@@ -19,7 +19,7 @@ export default function App() {
     aynı filmi 2. kez eklememeli.
     Kaydet butonunun olduğu component'e prop olarak gönderin.
     */
-    const savedMovies = savedMovies.find((item) => item.id == movie.id);
+    const savedMovies = filmler.find((item) => item.id == movie.id);
     if (!savedMovies) {
       setSavedMovies([...savedMovies, movie]);
     }
@@ -34,7 +34,7 @@ export default function App() {
       1. route '/' olacak ve FilmListesi component'ini yükleyecek ve buraya film listesini prop olarak yollayacak.
       2. route '/filmler/' parametresinden sonra 'id' parametresini alacak  (örnek: '/filmler/2', '/filmler/3' id dinamik olacak). Bu route 'Film' bileşenini yükleyecek.
       */
-        "Burayı kendi route'unuz ile değiştirin"
+        "Flimler"
       }
       <Switch>
         <Route exact path="/">

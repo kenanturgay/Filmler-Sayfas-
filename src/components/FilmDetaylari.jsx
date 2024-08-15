@@ -1,3 +1,5 @@
+import {Link } from "react-router-dom"
+
 export default function FilmDetayları(props) {
   const { title, director, metascore, id } = props.movie;
 
